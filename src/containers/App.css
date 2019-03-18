@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Robotaur';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Robotaur'), url('../resource/robotaur.woff') format('woff');
+}
+
+.head {
+    background: rgb(78, 132, 173);
+}
+
+.robotFont {
+    font-family: 'Robotaur';
+}
