@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import './App.css';
 
+/// Components
 import CardList from '../components/CardList/CardList';
 import Searchbox from '../components/Searchbox/Searchbox';
 import Scroll from '../components/Scroll/Scroll';
 import ErrorBoundry from '../components/ErrorBoundary/ErrorBoundary';
-import './App.css';
+import Header from '../components/Header/Header';
 
 /// Redux
 import {connect} from 'react-redux';
@@ -44,14 +46,14 @@ class App extends Component {
     return (
       <div className="App tc">
         <div className='dt w-100 bb bw1 b--white pa3 head' style={{height:'15vh'}}>
-          <h1 className='dtc ma3 pa2 robotFont white f2'>
-            RoboFriends
-          </h1>
+          <div className='dtc'>
+            <Header />
+          </div>
           <div className='dtc tr'>
             <Searchbox onSearchChange={onSearchChange}/>
           </div>
         </div>
-        <div style={{height:'85vh'}}>
+        <div style={{height:'85vh'}}> 
           {filteredRobots.length ?
             <Scroll>
               <ErrorBoundry>
