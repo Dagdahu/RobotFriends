@@ -4,15 +4,15 @@ class Searchbox extends React.Component {
     render () {
         return (
             <div>
-                <label for='searchbox'>
+                <label>
+                    Search Robots : 
+                    <input
+                        className='pa2 ma3' 
+                        type='text'
+                        placeholder='search'
+                        onChange={e => this.props.onSearchChange(e.target.value)}
+                    />
                 </label>
-                <input
-                    className='pa2 ma3' 
-                    type='text'
-                    id='searchbox'
-                    placeholder='search'
-                    onChange={e => this.props.onSearchChange(e.target.value)}
-                />
             </div>
         )
     }
