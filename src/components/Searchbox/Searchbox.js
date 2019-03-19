@@ -5,7 +5,8 @@ class Searchbox extends React.Component {
         return (
             <input
                 className='pa2 ma3' 
-                type='text' 
+                type='text'
+                name='searchbox'
                 placeholder='search'
                 onChange={e => this.props.onSearchChange(e.target.value)}
             />
