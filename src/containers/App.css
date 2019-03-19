@@ -2,6 +2,7 @@
     font-family: 'Robotaur';
     font-style: normal;
     font-weight: normal;
+    font-display: auto;
     src: local('Robotaur'), url('../resource/robotaur.woff') format('woff');
 }
 
